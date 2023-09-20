@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show student</title>
+</head>
+<body>
+   <span style="color: coral;font-weight: bold;"> Author {{name}}</span> 
+    <ul>
+        {{#each students}}
+    <li>
+        
+        {{id}}-
+
+      <a href='/students/ {{id}}'>
+     {{ name }}
+      </a>
+      </li>
+      {{/each}}
+      </ul>
+            <a href="/users" style="color: black;">users</a>
+
+</body>
+</html>
